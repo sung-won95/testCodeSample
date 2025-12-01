@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: testCode
+  datasource:
+    url: jdbc:mysql://localhost:3306/testcode?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+jwt:
+  secret:
+    key: 7Iqk7YyM665L7YqU64uV7J2YIOyXlO2ZlCDquZjsqK3goLgg7J207J6F64uI64ukLg==
