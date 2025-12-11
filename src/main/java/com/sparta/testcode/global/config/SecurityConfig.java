@@ -54,6 +54,8 @@ public class SecurityConfig {
                 authorizeHttpRequests
                         .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll() // resources
                         .requestMatchers("/auth/**").permitAll() // auth endpoints
+                        .requestMatchers("/ws-stomp/**").permitAll() // websocket endpoints
+                        .requestMatchers("/api/chat/**").permitAll() // chat API endpoints
                         .anyRequest().authenticated() // others protected
         );
 

@@ -43,6 +43,7 @@ class AuthControllerTest {
     @Test
     void login() throws Exception {
         // given
+
         LoginRequestDto requestDto = new LoginRequestDto("테스트유저", "비밀번호123");
 
         String token = "Bearer token";
